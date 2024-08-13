@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Houses||Landwey</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         .master{
+            background-color: rgb(245,245,245);
+            padding: 0 40px;
+         }
+         .sub-master{
+            background-color: white;
+         }
+         nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px;
+         }
+        .image img{
+            width: 200px;
+        }
+        .dropdown{
+            background-color: white;
+            width: 250px;
+            padding: 10px;
+            border-top: 3px solid orange;
+            display: none;
+            position: absolute;
+            right: 0;
+        }
+        .holder, .holders{
+            position: relative;
+        }
+        .about{
+            padding: 10px;
+        }
+        .about:hover{
+            color: orange;
+        }
+        .holder:hover .dropdown, .holders:hover .dropdowns{
+            display: block;
+        }
+        .dropdowns{
+            background-color: white;
+            width: 250px;
+            padding: 10px;
+            border-top: 3px solid orange;
+            display: none;
+            position: absolute;
+            right: 240px;
+            top:-12px;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+        }
+        h1{
+            text-align: center;
+            color: black;
+            font-size: 45px;
+            font-weight: 700;
+            text-decoration: black;
+        }
+        p{
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            width: 900px;
+            margin: 5px;
+            color: black;
+            text-decoration: none;
+        }
+        section{
+            display: flex;
+           align-items: center;
+            background-color: white;
+            justify-content: center;
+            gap: 25px;
+        }
+        .div1{
+            background-color: rgb(245,245,245);
+            width: 550px;
+            height: 800px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .div1 img{
+            width: 525px;
+            height: 500px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-left: 13px;
+        }
+        .div2{
+            background-color: rgb(245,245,245);
+            width: 550px;
+            height: 800px;
+            border-radius: 10px;
+        }
+        h2{
+            text-align: start;
+            color: black;
+            text-decoration: black; 
+            font-weight: 550;
+            margin-left: 35px;
+        }
+        button{
+            margin: 5px;
+            width:250px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            border: none;
+            font-size: 14px;
+            font-weight: 200;
+            background-color: rgb(234,91,12);
+            margin-left: 35px;
+        }
+        .position{
+            display: flex;
+           
+            border: 2px solid black;
+            color: white;
+            width: fit-content;
+            background-color: black;
+            border-radius: 20px;
+            position: fixed;
+            right: 0px;
+            bottom: 15px;
+            padding: 2px;
+        }
+        .position img{
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+        }
+        .position span{
+            margin: 5px;
+            font-size: 14px;
+        }
+        .material{
+            display: flex;
+            width: 150px;
+            align-items: center;
+        }
+        .material img{
+            width: 50px;
+            height: 50px;
+        }
+        .big{
+            width: 158px;
+            background-color: rgb(245,245,245);
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: auto;
+        }
+        .small img{
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        .big:hover{
+            visibility: visible;
+         }
+         .big:hover::-webkit-scrollbar-thumb{
+            background-color: rgb(234,91,12);
+            visibility: visible;
+         }
+         .big::-webkit-scrollbar{
+            /* display: none; */
+            background-color: transparent;
+            width: 10px;
+         }
+         .big::-webkit-scrollbar-thumb{
+            background-color: rgb(234,91,12);
+            border-radius: 20px;
+            visibility: hidden;
+         }
+         .button2{
+            width: fit-content;
+            border: 1px solid rgb(234,91,12);
+            border-radius: 20px;
+            text-align: center;
+            margin: auto; 
+         }
+         .land{
+            text-align: center;
+            margin: auto;
+         }
+    </style>
+</head>
+<body>
+    <div class="master">
+        <div class="sub-master">
+            <div>
+                <nav>
+                    <div class="image">
+                        <img src="https://landwey.ng/wp-content/uploads/2020/01/logoww.png" alt="">
+                    </div>
+                    <div class="holder">
+                        <div class="about">About</div>
+                        <div class="dropdown">
+                            <div class="holders">
+                                <p>Our Wey</p>
+                                <div class="dropdowns">
+                                    <p>wey</p>
+                                    <p>wey</p>
+                                    <p>wey</p>
+                                    <p>wey</p>
+                                </div>
+                            </div>
+                            <p>WeyTv</p>
+                            <p>Blog</p>
+                            <p>Contact Us</p>
+                        </div>
+                    </div>     
+                </nav>
+            </div>
+        </div>
+
+        <main>
+            <h1>New homes like no other.</h1>
+        <p>When you walk into a Landwey home, you’ll know that everything we do is designed around you. Our homes regularly achieve recognition for their design excellence, build quality and customer satisfaction.</p> 
+        </main>
+
+        <section>
+            <div class="div1">
+                <img src="TErra-gardens.jpg" alt="">
+    
+                <h2>Terraces at Terra Gardens</h2>
+                <button>Monastery Road, Sangotedo, Lekki</button>
+
+                
+                <div class="material">
+                    <img src="dumbbell.png" alt="">
+                    <p>Gym</p>
+                    <img src="smartphone.png" alt="">
+                    <p>Smart Entry</p>
+                    <img src="bathrobe.png" alt="">
+                    <p>Spa</p>
+                    <img src="router.png" alt="">
+                    <p>Wifi</p>
+                </div>
+               
+
+                <div class="big">
+                    <div class="small">
+                        <img src="image-001.jpg" alt="">
+                    </div>
+                    <div class="small">
+                        <img src="image-002.jpg" alt="">
+                    </div>
+                    <div class="small">
+                        <img src="image 003.jpg" alt="">
+                    </div>
+                </div>
+                <button class="button2">See More</button>
+            </div>
+                   
+                <div class="div2"></div>
+        </section>
+        <div class="position">
+            <img src="data:image/png;base64,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" alt="">
+            <span>Quick Response</span>
+        </div>
+        <p class="land">LandWey, a member of Oxygen Holdings</p>
+    </div>
+    
+</body>
+</html>
